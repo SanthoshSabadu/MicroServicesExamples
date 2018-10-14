@@ -1,0 +1,13 @@
+Chapter 4:
+Import as Existing Maven project
+mvn clean install
+Go to Project Folder Chapter
+javaw -jar restaurent-service/target/restaurent-service.jar (javaw for running server in background)
+First start eureka-server, then start all micro services
+Check status of micro services in http://localhost:8761 (port might change)
+Remaining might run on 2222, 2223, 2224
+Check the Controller class in resources package for Rest paths
+Restaurant Service:    http://localhost:2222/v1/restaurants?name=o
+User Service:          http://localhost:2224/v1/user?name=User%20Name%201
+Booking Service:       http://localhost:2223/v1/booking/1
+Using EurekaServer http://lin65000129:2224/v1/user?name=User%20Name%201
